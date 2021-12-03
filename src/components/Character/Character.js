@@ -1,14 +1,27 @@
 import React from 'react';
 import './Character.css';
-export default function CharacterOptions({ head, setHead, middle, setMiddle, pants, setPants }) {
+export default function CharacterOptions({
+  head,
+  setHead,
+  setHeadCount,
+  middle,
+  setMiddle,
+  setMiddleCount,
+  pants,
+  setPants,
+  setPantsCount,
+}) {
   const handleHead = (e) => {
     setHead(e.target.value);
+    setHeadCount((prevState) => prevState + 1);
   };
   const handleMiddle = (e) => {
     setMiddle(e.target.value);
+    setMiddleCount((prevState) => prevState + 1);
   };
   const handlePants = (e) => {
     setPants(e.target.value);
+    setPantsCount((prevState) => prevState + 1);
   };
   return (
     <div>
