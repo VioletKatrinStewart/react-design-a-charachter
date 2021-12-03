@@ -14,7 +14,6 @@ export default function Home() {
 
   return (
     <div>
-      <Character {...{ head, setHead, middle, setMiddle, pants, setPants }} />
       <Character
         {...{
           head,
