@@ -1,6 +1,6 @@
-import './App.css'
-import Home from './components./Home/Home'
-import background from './background.jpg'
+import './App.css';
+import Home from './components/Home/Home';
+import background from './background.jpg';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <div style={{ backgroundImage: `url(${background})` }}></div>
       <Home />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

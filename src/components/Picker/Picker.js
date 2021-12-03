@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-export default function Picker() {
+function Picker() {
   return (
     <>
       <div>
@@ -13,5 +13,7 @@ export default function Picker() {
         <img src={`${process.env.PUBLIC_URL}/leg-pants.png`} />
       </div>
     </>
-  )
+  );
 }
+
+export default Picker;

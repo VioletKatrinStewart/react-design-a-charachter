@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 export default function Character() {
   return (
-    <>
+    <div>
       <div>
         <label>
           Head
@@ -32,10 +32,9 @@ export default function Character() {
         </label>
         <label>
           Give your character a catch-phrase
-          <input />
           <button>Add</button>
         </label>
       </div>
-    </>
-  )
+    </div>
+  );
 }
