@@ -1,12 +1,22 @@
 import React from 'react';
-
-export default function Character() {
+import './Character.css';
+export default function CharacterOptions({ head, setHead, middle, setMiddle, pants, setPants }) {
+  const handleHead = (e) => {
+    setHead(e.target.value);
+  };
+  const handleMiddle = (e) => {
+    setMiddle(e.target.value);
+  };
+  const handlePants = (e) => {
+    setPants(e.target.value);
+  };
   return (
     <div>
       <div>
         <label>
           Head
-          <select>
+          <select value={head} onChange={handleHead}>
+            <option value="dog-head">Dog</option>
             <option value="bird-head">Bird</option>
             <option value="duck-head">Duck</option>
             <option value="horse-head">Horse</option>
@@ -14,7 +24,7 @@ export default function Character() {
         </label>
         <label>
           Shirt
-          <select>
+          <select value={middle} onChange={handleMiddle}>
             <option value="red-middle">Red Shirt</option>
             <option value="pink-middle">Pink Shirt</option>
             <option value="blue-middle">Blue Shirt</option>
@@ -23,7 +33,7 @@ export default function Character() {
         </label>
         <label>
           Pants
-          <select>
+          <select value={pants} onChange={handlePants}>
             <option value="leg-pants">Leg</option>
             <option value="white-pants">White Pants </option>
             <option value="dog-pants">Dog Pants</option>
