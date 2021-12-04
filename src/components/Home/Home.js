@@ -11,6 +11,8 @@ export default function Home() {
   const [headCount, setHeadCount] = useState(0);
   const [middleCount, setMiddleCount] = useState(0);
   const [pantsCount, setPantsCount] = useState(0);
+  const [catchPhrase, setCatchPhrase] = useState('');
+  const [catchPhraseList, setCatchPhraseList] = useState([]);
 
   return (
     <div>
@@ -25,12 +27,24 @@ export default function Home() {
           setHeadCount,
           setMiddleCount,
           setPantsCount,
+          catchPhrase,
+          setCatchPhrase,
+          catchPhraseList,
+          setCatchPhraseList,
         }}
       />
       <Picker {...{ head, middle, pants }} />
       {!!headCount && <p>You changed the head {headCount} times.</p>}
       {!!middleCount && <p>You changed the shirt {middleCount} times.</p>}
       {!!pantsCount && <p>You changed bottoms {pantsCount} times.</p>}
+      {!!catchPhraseList.length && (
+        <div>
+          Your catch-phrases are:
+          {catchPhraseList.map((elem) => (
+            <p key={elem}>{elem}</p>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

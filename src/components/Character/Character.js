@@ -10,6 +10,9 @@ export default function CharacterOptions({
   pants,
   setPants,
   setPantsCount,
+  catchPhrase,
+  setCatchPhrase,
+  setCatchPhraseList,
 }) {
   const handleHead = (e) => {
     setHead(e.target.value);
@@ -23,10 +26,14 @@ export default function CharacterOptions({
     setPants(e.target.value);
     setPantsCount((prevState) => prevState + 1);
   };
+  const handleCatchPhrase = () => {
+    setCatchPhraseList((prevState) => [...prevState, catchPhrase]);
+    setCatchPhrase('');
+  };
   return (
     <div>
-      <div>
-        <label>
+      <div className="div1">
+        <label className="head">
           Head
           <select value={head} onChange={handleHead}>
             <option value="dog-head">Dog</option>
@@ -54,8 +61,14 @@ export default function CharacterOptions({
           </select>
         </label>
         <label>
-          Give your character a catch-phrase
-          <button>Add</button>
+          What`s your catch phrase?
+          <input
+            className="catchphrase"
+            type="text"
+            value={catchPhrase}
+            onChange={(e) => setCatchPhrase(e.target.value)}
+          />
+          <button onClick={handleCatchPhrase}>Add</button>
         </label>
       </div>
     </div>

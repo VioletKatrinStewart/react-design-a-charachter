@@ -1,0 +1,12 @@
+.characterImg {
+  width: 100px;
+}
+
+.imgs {
+  background-color: palegoldenrod;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  margin: auto;
+}
