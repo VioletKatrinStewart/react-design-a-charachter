@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
-import Preview from './Preview';
+import Character from './Character';
 
-test('renders the Preview panel', () => {
-  const container = render(<Preview head="duck" middle="pink" bottom="blue" />);
+test('renders the character panel', () => {
+  const container = render(<Character head="duck" middle="pink" bottom="blue" />);
   expect(container).toMatchSnapshot();
 });
