@@ -1,10 +1,142 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders the character panel 1`] = `
+exports[`renders picker component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <div>
+        <div
+          class="imgs"
+        >
+          <img
+            class="characterImg"
+            src="/head/bird-head.png"
+          />
+          <img
+            class="characterImg"
+            src="/middle/pink-middle.png"
+          />
+          <img
+            class="characterImg"
+            src="/pants/blue-pants.png"
+          />
+        </div>
+        <div>
+          <div
+            class="div1"
+          >
+            <label
+              class="head"
+            >
+              Head
+              <select>
+                <option
+                  value="dog-head"
+                >
+                  Dog
+                </option>
+                <option
+                  value="bird-head"
+                >
+                  Bird
+                </option>
+                <option
+                  value="duck-head"
+                >
+                  Duck
+                </option>
+                <option
+                  value="horse-head"
+                >
+                  Horse
+                </option>
+              </select>
+            </label>
+            <label>
+              Shirt
+              <select>
+                <option
+                  value="red-middle"
+                >
+                  Red Shirt
+                </option>
+                <option
+                  value="pink-middle"
+                >
+                  Pink Shirt
+                </option>
+                <option
+                  value="blue-middle"
+                >
+                  Blue Shirt
+                </option>
+                <option
+                  value="dress-middle"
+                >
+                  Dress
+                </option>
+              </select>
+            </label>
+            <label>
+              Pants
+              <select>
+                <option
+                  value="leg-pants"
+                >
+                  Leg
+                </option>
+                <option
+                  value="blue-pants"
+                >
+                  Blue Pants 
+                </option>
+                <option
+                  value="dog-pants"
+                >
+                  Dog Pants
+                </option>
+                <option
+                  value="white-pants"
+                >
+                  White Pants
+                </option>
+              </select>
+            </label>
+            <label>
+              What\`s your catch phrase?
+              <input
+                class="catchphrase"
+                type="text"
+                value=""
+              />
+              <button>
+                Add
+              </button>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        class="imgs"
+      >
+        <img
+          class="characterImg"
+          src="/head/bird-head.png"
+        />
+        <img
+          class="characterImg"
+          src="/middle/pink-middle.png"
+        />
+        <img
+          class="characterImg"
+          src="/pants/blue-pants.png"
+        />
+      </div>
       <div>
         <div
           class="div1"
@@ -98,102 +230,6 @@ Object {
             </button>
           </label>
         </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div>
-      <div
-        class="div1"
-      >
-        <label
-          class="head"
-        >
-          Head
-          <select>
-            <option
-              value="dog-head"
-            >
-              Dog
-            </option>
-            <option
-              value="bird-head"
-            >
-              Bird
-            </option>
-            <option
-              value="duck-head"
-            >
-              Duck
-            </option>
-            <option
-              value="horse-head"
-            >
-              Horse
-            </option>
-          </select>
-        </label>
-        <label>
-          Shirt
-          <select>
-            <option
-              value="red-middle"
-            >
-              Red Shirt
-            </option>
-            <option
-              value="pink-middle"
-            >
-              Pink Shirt
-            </option>
-            <option
-              value="blue-middle"
-            >
-              Blue Shirt
-            </option>
-            <option
-              value="dress-middle"
-            >
-              Dress
-            </option>
-          </select>
-        </label>
-        <label>
-          Pants
-          <select>
-            <option
-              value="leg-pants"
-            >
-              Leg
-            </option>
-            <option
-              value="blue-pants"
-            >
-              Blue Pants 
-            </option>
-            <option
-              value="dog-pants"
-            >
-              Dog Pants
-            </option>
-            <option
-              value="white-pants"
-            >
-              White Pants
-            </option>
-          </select>
-        </label>
-        <label>
-          What\`s your catch phrase?
-          <input
-            class="catchphrase"
-            type="text"
-            value=""
-          />
-          <button>
-            Add
-          </button>
-        </label>
       </div>
     </div>
   </div>,

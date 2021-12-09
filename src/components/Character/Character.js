@@ -55,7 +55,7 @@ export default function CharacterOptions({
           Pants
           <select value={pants} onChange={handlePants}>
             <option value="leg-pants">Leg</option>
-            <option value="white-pants">White Pants </option>
+            <option value="blue-pants">Blue Pants </option>
             <option value="dog-pants">Dog Pants</option>
             <option value="white-pants">White Pants</option>
           </select>
