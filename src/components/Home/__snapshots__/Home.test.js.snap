@@ -11,7 +11,7 @@ Object {
         >
           <img
             class="characterImg"
-            src="/head/bird-head.png"
+            src="/head/duck-head.png"
           />
           <img
             class="characterImg"
@@ -126,7 +126,7 @@ Object {
       >
         <img
           class="characterImg"
-          src="/head/bird-head.png"
+          src="/head/duck-head.png"
         />
         <img
           class="characterImg"

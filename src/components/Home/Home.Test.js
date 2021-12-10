@@ -5,7 +5,7 @@ import Character from '../Character/Character';
 test('renders picker component', () => {
   const container = render(
     <div>
-      <Picker head={'bird-head'} middle={'pink-middle'} pants={'blue-pants'} />
+      <Picker head={'duck-head'} middle={'pink-middle'} pants={'blue-pants'} />
       <Character head="duck" middle="pink" bottom="blue" />
     </div>
   );
